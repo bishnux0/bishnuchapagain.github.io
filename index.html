@@ -2,198 +2,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Bishnu Chapagain">
-  <meta name="description" content="Official portfolio of Bishnu Chapagain — student, entrepreneur and app developer from Nepal.">
-  <title>Bishnu Chapagain | Portfolio</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: Arial, sans-serif;
-      background: #080b14;
-      color: #f5f5f5;
-      line-height: 1.7;
-    }
-    header {
-      padding: 22px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #252a3a;
-    }
-    .logo { font-size: 22px; font-weight: bold; color: #70d6ff; }
-    nav a {
-      color: #ddd;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
-    nav a:hover { color: #70d6ff; }
-    .hero {
-      min-height: 85vh;
-      padding: 80px 8%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .hero-text { max-width: 650px; }
-    .tag { color: #70d6ff; letter-spacing: 3px; font-size: 13px; }
-    h1 { font-size: clamp(40px, 7vw, 68px); line-height: 1.15; margin: 18px 0; }
-    h1 span { color: #70d6ff; }
-    .hero p { color: #b8bfd0; font-size: 17px; max-width: 560px; }
-    .button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 24px;
-      background: #70d6ff;
-      color: #080b14;
-      text-decoration: none;
-      border-radius: 7px;
-      font-weight: bold;
-    }
-    .photo {
-      width: 260px;
-      height: 320px;
-      border: 2px solid #70d6ff;
-      border-radius: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #9ca8bd;
-      background: #111827;
-      padding: 20px;
-    }
-    section { padding: 75px 8%; }
-    .section-title { font-size: 32px; margin-bottom: 25px; }
-    .section-title span { color: #70d6ff; }
-    .about p { color: #b8bfd0; max-width: 750px; }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-    }
-    .project {
-      background: #111827;
-      border: 1px solid #252f42;
-      border-radius: 12px;
-      padding: 25px;
-      transition: .2s;
-    }
-    .project:hover { transform: translateY(-5px); border-color: #70d6ff; }
-    .project h3 { color: #70d6ff; margin-bottom: 12px; }
-    .project p { color: #b8bfd0; font-size: 14px; }
-    .skills { color: #b8bfd0; }
-    .skills span {
-      display: inline-block;
-      padding: 8px 14px;
-      margin: 6px;
-      background: #111827;
-      border: 1px solid #30394d;
-      border-radius: 20px;
-    }
-    .contact a { color: #70d6ff; text-decoration: none; }
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #8992a5;
-      border-top: 1px solid #252a3a;
-      font-size: 13px;
-    }
-    @media(max-width: 600px) {
-      header { align-items: flex-start; flex-direction: column; gap: 12px; }
-      nav a { margin: 0 12px 0 0; }
-      .hero { padding-top: 60px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bishnu Chapagain | Portfolio</title>
+
+    <meta name="description" content="Official portfolio website of Bishnu Chapagain, a young developer, creator, innovator, and business student from Nepal.">
+
+    <meta name="author" content="Bishnu Chapagain">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="logo">BISHNU.</div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">BISHNU<span>.</span></div>
 
-<main>
-  <div class="hero">
-    <div class="hero-text">
-      <div class="tag">STUDENT · ENTREPRENEUR · APP DEVELOPER</div>
-      <h1>Hi, I'm <span>Bishnu Chapagain.</span></h1>
-      <p>
-        I'm from Tanahun, Nepal. I'm interested in technology,
-        artificial intelligence, app development and building
-        creative digital products.
-      </p>
-      <a class="button" href="#projects">Explore My Projects</a>
-    </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="photo">
-      Add your coat photo here later
-    </div>
-  </div>
+    <!-- Home Section -->
+    <section id="home" class="hero">
 
-  <section class="about" id="about">
-    <h2 class="section-title">About <span>Me</span></h2>
-    <p>
-      I'm a student and aspiring entrepreneur who enjoys learning
-      about technology and creating digital experiences. My goal
-      is to build useful products and bring innovative ideas to life.
-    </p>
-  </section>
+        <div class="hero-content">
 
-  <section id="projects">
-    <h2 class="section-title">My <span>Projects</span></h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Nepali Gufgaf</h3>
-        <p>A social communication app project focused on chatting,
-        reels, stories, friend streaks and AI features.</p>
-      </div>
-      <div class="project">
-        <h3>Air Lumixa AI</h3>
-        <p>An AI app project. More details and features will be added soon.</p>
-      </div>
-      <div class="project">
-        <h3>Jungle Escape</h3>
-        <p>A game project. More information and gameplay links will be added soon.</p>
-      </div>
-    </div>
-  </section>
+            <p class="subtitle">WELCOME TO MY PERSONAL WEBSITE</p>
 
-  <section id="skills">
-    <h2 class="section-title">My <span>Interests</span></h2>
-    <div class="skills">
-      <span>Artificial Intelligence</span>
-      <span>App Development</span>
-      <span>Software Development</span>
-      <span>Entrepreneurship</span>
-      <span>Innovation</span>
-      <span>Technology</span>
-    </div>
-  </section>
+            <h1>
+                Hi, I'm <span>Bishnu Chapagain</span>
+            </h1>
 
-  <section class="contact" id="contact">
-    <h2 class="section-title">Get In <span>Touch</span></h2>
-    <p>Email: <a href="mailto:bishnuchapagain.com.np@gmail.com">bishnuchapagain.com.np@gmail.com</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/bishnu_x0/" target="_blank" rel="noopener">bishnu_x0</a></p>
-    <p>Facebook: <a href="https://www.facebook.com/BishnuX0" target="_blank" rel="noopener">BishnuX0</a></p>
-    <p>TikTok: <a href="https://www.tiktok.com/@bishnu_x0" target="_blank" rel="noopener">bishnu_x0</a></p>
-    <p>GitHub: <a href="https://github.com/bishnux0" target="_blank" rel="noopener">bishnux0</a></p>
-  </section>
-</main>
+            <h2>Developer | Creator | Innovator</h2>
 
-<footer>
-  © 2026 Bishnu Chapagain. All rights reserved.
-</footer>
+            <p>
+                I am passionate about technology, artificial intelligence,
+                app development, business, and innovation.
+                I believe in learning, creating, and building a better future
+                through technology.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">Explore My Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="bishnu.jpg" alt="Bishnu Chapagain">
+        </div>
+
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+
+            <p>
+                Hello! My name is Bishnu Chapagain. I am a young developer,
+                creator, innovator, and Business Studies student from
+                Tanahun District, Gandaki Province, Nepal.
+            </p>
+
+            <p>
+                I am interested in technology, Artificial Intelligence (AI),
+                app development, social media, business, and innovation.
+                My goal is to create powerful, modern, and useful applications
+                and digital solutions that can help people.
+            </p>
+
+            <p>
+                I am continuously learning new skills, exploring technology,
+                and working on creative ideas. I believe that age is not a
+                barrier to innovation and that dedication, creativity,
+                and learning can create great opportunities.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A personal website showcasing my biography, skills,
+                    projects, interests, achievements, and contact information.
+                </p>
+
+                <a href="https://bishnux0.github.io/bishnuchapagain.github.io/"
+                   target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>AIR LUMEXA</h3>
+
+                <p>
+                    A creative technology project focused on modern digital
+                    experiences, innovation, and futuristic ideas.
+                </p>
+
+                <a href="#" target="_blank">
+                    Coming Soon →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Game Development</h3>
+
+                <p>
+                    Exploring game development and creating interactive
+                    digital experiences through creativity and technology.
+                </p>
+
+                <a href="#" target="_blank">
+                    Coming Soon →
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Website Structure</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Website Design</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Web Interactivity</p>
+            </div>
+
+            <div class="skill">
+                <h3>AI Technology</h3>
+                <p>Artificial Intelligence</p>
+            </div>
+
+            <div class="skill">
+                <h3>Creativity</h3>
+                <p>Ideas & Innovation</p>
+            </div>
+
+            <div class="skill">
+                <h3>Business</h3>
+                <p>Business Studies</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <h3>School Education</h3>
+
+            <p>
+                Currently pursuing my education in Business Studies
+                while exploring technology, digital innovation,
+                and entrepreneurial opportunities.
+            </p>
+
+            <p><strong>Location:</strong> Tanahun, Nepal</p>
+
+        </div>
+
+    </section>
+
+    <!-- Interests -->
+    <section id="interests" class="section">
+
+        <h2 class="section-title">My Interests</h2>
+
+        <div class="interests-container">
+
+            <div class="interest-card">Technology</div>
+            <div class="interest-card">Artificial Intelligence</div>
+            <div class="interest-card">App Development</div>
+            <div class="interest-card">Web Development</div>
+            <div class="interest-card">Business</div>
+            <div class="interest-card">Innovation</div>
+            <div class="interest-card">Gaming</div>
+            <div class="interest-card">Social Media</div>
+
+        </div>
+
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+
+        <h2 class="section-title">Achievements & Goals</h2>
+
+        <div class="achievements-container">
+
+            <div class="achievement-card">
+                <h3>Personal Website</h3>
+                <p>
+                    Creating and developing my own portfolio website
+                    to showcase my identity, ideas, and projects.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>Technology Learning</h3>
+                <p>
+                    Continuously learning about programming,
+                    artificial intelligence, and modern technology.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>Future Goals</h3>
+                <p>
+                    Building useful applications, developing innovative
+                    projects, and becoming a successful entrepreneur.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="contact-text">
+            Have an idea, project, or opportunity?
+            Feel free to connect with me.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:YOUR_EMAIL@gmail.com">
+                Email Me
+            </a>
+
+            <a href="https://github.com/bishnux0"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Bishnu Chapagain. All Rights Reserved.
+        </p>
+
+        <p>
+            Designed with creativity and passion.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
