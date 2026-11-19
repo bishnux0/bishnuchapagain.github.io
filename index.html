@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bishnu Chapagain">
+  <meta name="description" content="Official portfolio of Bishnu Chapagain — student, entrepreneur and app developer from Nepal.">
+  <title>Bishnu Chapagain | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b14;
+      color: #f5f5f5;
+      line-height: 1.7;
+    }
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #252a3a;
+    }
+    .logo { font-size: 22px; font-weight: bold; color: #70d6ff; }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    nav a:hover { color: #70d6ff; }
+    .hero {
+      min-height: 85vh;
+      padding: 80px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .hero-text { max-width: 650px; }
+    .tag { color: #70d6ff; letter-spacing: 3px; font-size: 13px; }
+    h1 { font-size: clamp(40px, 7vw, 68px); line-height: 1.15; margin: 18px 0; }
+    h1 span { color: #70d6ff; }
+    .hero p { color: #b8bfd0; font-size: 17px; max-width: 560px; }
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background: #70d6ff;
+      color: #080b14;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+    .photo {
+      width: 260px;
+      height: 320px;
+      border: 2px solid #70d6ff;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #9ca8bd;
+      background: #111827;
+      padding: 20px;
+    }
+    section { padding: 75px 8%; }
+    .section-title { font-size: 32px; margin-bottom: 25px; }
+    .section-title span { color: #70d6ff; }
+    .about p { color: #b8bfd0; max-width: 750px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: #111827;
+      border: 1px solid #252f42;
+      border-radius: 12px;
+      padding: 25px;
+      transition: .2s;
+    }
+    .project:hover { transform: translateY(-5px); border-color: #70d6ff; }
+    .project h3 { color: #70d6ff; margin-bottom: 12px; }
+    .project p { color: #b8bfd0; font-size: 14px; }
+    .skills { color: #b8bfd0; }
+    .skills span {
+      display: inline-block;
+      padding: 8px 14px;
+      margin: 6px;
+      background: #111827;
+      border: 1px solid #30394d;
+      border-radius: 20px;
+    }
+    .contact a { color: #70d6ff; text-decoration: none; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8992a5;
+      border-top: 1px solid #252a3a;
+      font-size: 13px;
+    }
+    @media(max-width: 600px) {
+      header { align-items: flex-start; flex-direction: column; gap: 12px; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { padding-top: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">BISHNU.</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-text">
+      <div class="tag">STUDENT · ENTREPRENEUR · APP DEVELOPER</div>
+      <h1>Hi, I'm <span>Bishnu Chapagain.</span></h1>
+      <p>
+        I'm from Tanahun, Nepal. I'm interested in technology,
+        artificial intelligence, app development and building
+        creative digital products.
+      </p>
+      <a class="button" href="#projects">Explore My Projects</a>
+    </div>
+
+    <div class="photo">
+      Add your coat photo here later
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <p>
+      I'm a student and aspiring entrepreneur who enjoys learning
+      about technology and creating digital experiences. My goal
+      is to build useful products and bring innovative ideas to life.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Nepali Gufgaf</h3>
+        <p>A social communication app project focused on chatting,
+        reels, stories, friend streaks and AI features.</p>
+      </div>
+      <div class="project">
+        <h3>Air Lumixa AI</h3>
+        <p>An AI app project. More details and features will be added soon.</p>
+      </div>
+      <div class="project">
+        <h3>Jungle Escape</h3>
+        <p>A game project. More information and gameplay links will be added soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My <span>Interests</span></h2>
+    <div class="skills">
+      <span>Artificial Intelligence</span>
+      <span>App Development</span>
+      <span>Software Development</span>
+      <span>Entrepreneurship</span>
+      <span>Innovation</span>
+      <span>Technology</span>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <p>Email: <a href="mailto:bishnuchapagain.com.np@gmail.com">bishnuchapagain.com.np@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/bishnu_x0/" target="_blank" rel="noopener">bishnu_x0</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/BishnuX0" target="_blank" rel="noopener">BishnuX0</a></p>
+    <p>TikTok: <a href="https://www.tiktok.com/@bishnu_x0" target="_blank" rel="noopener">bishnu_x0</a></p>
+    <p>GitHub: <a href="https://github.com/bishnux0" target="_blank" rel="noopener">bishnux0</a></p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Bishnu Chapagain. All rights reserved.
+</footer>
+
+</body>
+</html>
